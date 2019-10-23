@@ -34,6 +34,10 @@ h2 {
     border-radius: 5px;
 }
 
+.menu-bar {
+    display: none;
+}
+
 .x {
     border: solid 1px #26de81;
     padding: 20px;
@@ -147,6 +151,44 @@ u {
     margin: 50px;
     padding: 30px;
     width: auto;
+}
+
+@media (max-width: 835px) {
+    header nav {
+        width: 70%;
+        height: 100%;
+        left: -100%;
+        margin: 0%;
+        position: absolute;
+    }
+    header nav ul li {
+        display: block;
+        float: left;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        background-color: grey;
+    }
+    .menu-bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background-color:  gray;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    } 
+    .menu-bar span {
+        float: right;
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 712px) {
